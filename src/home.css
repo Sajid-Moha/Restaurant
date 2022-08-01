@@ -1,0 +1,28 @@
+header {
+    height: 10vh;
+    width: 100%;
+
+    padding-top: .5em;
+    padding-bottom: 1em;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: aliceblue;
+}
+
+#logo {
+    object-fit: cover;
+
+    height: 100%;
+    margin-left: 1em;
+    aspect-ratio: 1;
+}
+
+.brand-name {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

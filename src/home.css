@@ -26,3 +26,8 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+main {
+    width: 60vw;
+    margin: 2em auto;
+}

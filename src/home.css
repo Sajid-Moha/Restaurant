@@ -73,11 +73,11 @@ nav {
 }
 
 .nav-button:hover, .nav-button:focus {
-    font-size: larger;
+    transform: scale(1.05);
 }
 
 .nav-button:active {
-    font-size: smaller;
+    transform: scale(.95);
 }
 
 main {

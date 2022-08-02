@@ -1,0 +1,88 @@
+/* Text Styling */
+.item-name {
+    font-size: 3em;
+    height: auto;
+
+    color: var(--logo);
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.price {
+    color: var(--logo);
+    font-family: 'Mouse Memoirs', sans-serif;
+
+    font-size: 2em;
+}
+
+.description {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .07em;
+    font-size: 1.2em;
+
+    color: #69cf01;
+}
+
+/* grid formatting */
+.food-card {
+    height: 21em;
+    width: 21em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr .5fr;
+
+    box-shadow: 0em 0em 1em #2C3639;
+}
+
+.item-name-container {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.item-photo {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.description {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.price {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/* element formatting */
+.food-card {
+    background-color: #3F4E4F;
+    color: var(--logo);
+
+    margin: auto;
+
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+.item-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-photo {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.price {
+    text-align: center;
+    height: auto;
+}
+
+.description, .price {
+    padding-left: 1em;
+    padding-right: 1em;
+
+    text-indent: 0em;
+}

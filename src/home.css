@@ -1,33 +1,88 @@
+:root {
+    /* Text Colors */
+    --logo: #81ff00;
+
+    --base: #DCD7C9;
+    --secondary: #A27B5C;
+    --dark: #8e6c50;
+}
+
+/* TEXT STYLING*/
+.brand-name {
+    color: var(--logo);
+    font-size: x-large;
+    font-family: 'Mouse Memoirs', sans-serif;
+    letter-spacing: .25em;
+    text-shadow: var(--dark) 3px 3px;
+}
+
+nav {
+    color: var(--base);
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-weight: bolder;
+}
+
+/* element sizing / formatting */
+body {
+    background-color: var(--base);
+}
+
 header {
+    background-color: var(--secondary);
     height: 10vh;
     width: 100%;
-
-    padding-top: .5em;
-    padding-bottom: 1em;
+    position: relative;
 
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-    background-color: aliceblue;
+    padding-top: .5em;
+    padding-bottom: 1em;
 }
 
 #logo {
-    object-fit: cover;
-
     height: 100%;
-    margin-left: 1em;
     aspect-ratio: 1;
+    position: absolute;
+
+    top: 0em;
+    left: 1em;
 }
 
-.brand-name {
-    width: 100%;
-
+nav {
+    background-color: var(--dark);
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-button {
+    cursor: pointer;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+
+    border: none;
+    margin: .5em;
+
+    transition: .1s;
+}
+
+.nav-button:hover, .nav-button:focus {
+    font-size: larger;
+}
+
+.nav-button:active {
+    font-size: smaller;
 }
 
 main {
     width: 60vw;
     margin: 2em auto;
+
+    text-indent: 2em;
 }

@@ -1,5 +1,6 @@
 import Logo from './burger.png';
 
+let page = document.querySelector('body');
 let site = document.querySelector('#content');
 
 function create_branding () {
@@ -17,10 +18,10 @@ function create_branding () {
 
     header.appendChild(logoImage);
     header.appendChild(logoHolder);
-    site.appendChild(header);
+    page.prepend(header);
 }
 
-function append_nav () {
+function add_nav () {
     let nav = document.createElement('nav');
 
     let button1 = document.createElement('button');
@@ -42,12 +43,14 @@ function append_nav () {
     nav.appendChild(button2);
     nav.appendChild(button3);
 
-    site.appendChild(nav);
+    page.prepend(nav);
 }
 
 function create_header () {
+    // use prepend to insert elements and since we want header above nav
+    //  we have to insert nav first
+    add_nav();
     create_branding();
-    append_nav();
 }
 
 export default create_header;

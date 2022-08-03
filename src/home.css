@@ -8,6 +8,11 @@
 }
 
 /* TEXT STYLING*/
+main {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+
 .brand-name {
     color: var(--logo);
     font-size: x-large;

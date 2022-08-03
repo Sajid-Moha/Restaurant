@@ -1,0 +1,19 @@
+main > h1 {
+    text-align: center;
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.contact-info {
+    border: 2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list > li {
+    margin-bottom: 1em;
+}
